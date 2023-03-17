@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="/api/quotation">
+        <table>
+            <tr>
+                <td>Item Name:</td>
+                <td>
+                    <input type="text" name="name" id="name">
+                </td>
+            </tr>
+            <tr>
+                <td>Item Price:</td>
+                <td>
+                    <input type="text" name="price" id="price">
+                </td>
+            </tr>
+            <tr>
+                <td>Username:</td>
+                <td>
+                    <input type="text" name="username" id="username">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">Post</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <form method="GET" action="/quotations">
+        <table>
+            <tr>
+                <td>Click below for list of quotations</td>
+            </tr>
+            <tr>
+                <td><button type="submit">Get</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
