@@ -17,7 +17,9 @@ public class QuotationService {
     public ResponseEntity<String> post(String name, String price, String username) {
         String url = "https://quotation-production.up.railway.app/quotation";
         Quotation q = new Quotation();
-        RequestEntity req = RequestEntity.post(url).contentType(MediaType.APPLICATION_JSON).body(q.toJSON().toString(), String.class);
+        RequestEntity req = RequestEntity.post(url)
+            .contentType(MediaType.APPLICATION_JSON)
+            .body(q.toJSON().toString(), String.class);
 
         RestTemplate template = new RestTemplate();
 
